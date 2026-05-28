@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+// Reading File
 fs.readFile('data.txt', 'utf-8', (error, data) => {
     if(error) {
         console.log("Error");
@@ -8,13 +9,4 @@ fs.readFile('data.txt', 'utf-8', (error, data) => {
     }
     console.log("Data");
     console.log(data);
-});
-
-fs.writeFile('message.txt', 'I am writing this to a message file', (error) => {
-    if(error) {
-        console.log("Error in writing");
-        console.log(error);
-    }
-
-    console.log("File created successfully!!!");
 });
